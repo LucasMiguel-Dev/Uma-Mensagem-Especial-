@@ -1,0 +1,65 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Georgia', serif;
+        background: linear-gradient(135deg, #fff8f8, #0be93b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        text-align: center;
+        color: #fff;
+    }
+
+    .container {
+        background: rgba(10, 170, 71, 0.15);
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 30px rgba(0,0,0,0.2);
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.3s;
+    }
+
+    #sim {
+        background-color: #ff4e8b;
+        color: white;
+    }
+
+    #sim:hover {
+        background-color: #ff1f6a;
+        transform: scale(1.1);
+    }
+
+    #nao {
+        background-color: white;
+        color: #ff4e8b;
+        position: absolute;
+    }
+
+    .poema {
+        display: none;
+        font-size: 18px;
+        line-height: 1.6;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
